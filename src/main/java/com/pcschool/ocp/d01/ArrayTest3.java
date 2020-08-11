@@ -1,6 +1,8 @@
 package com.pcschool.ocp.d01;
 
 import java.util.Arrays;
+import static java.util.Arrays.stream;
+import java.util.DoubleSummaryStatistics;
 
 public class ArrayTest3 {
     public static void main(String[] args) {
@@ -29,6 +31,15 @@ public class ArrayTest3 {
         sum=Arrays.stream(h).sum();
         avg=Arrays.stream(h).average().getAsDouble();
         System.out.printf("總身高: %.1f 平均身高: %.1f\n",sum,avg);
+        //統計
+      DoubleSummaryStatistics stat=  Arrays.stream(h).summaryStatistics();
+        System.out.println(stat);
+        System.out.printf("數量:%d\n",stat.getCount());
+        System.out.printf("平均:%.2f\n",stat.getAverage());
+        System.out.printf("總和:%.2f\n",stat.getSum());
+        System.out.printf("最大值:%.2f\n",stat.getMax());
+        System.out.printf("最小值:%.2f\n",stat.getMin());
+
     }
     
 }
