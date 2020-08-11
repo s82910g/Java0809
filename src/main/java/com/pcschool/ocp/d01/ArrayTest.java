@@ -10,7 +10,7 @@ public class ArrayTest {
         System.out.println(scores[3]);
         System.out.println(scores.length);
         
-        int sum=0;
+        /*int sum=0;
         for(int i=0;i<4;i++){
             sum+=scores[i];
         }
@@ -26,6 +26,6 @@ public class ArrayTest {
           System.out.printf("標準差:%.2f\n",sd);
           //變異係數
           double cv=sd/avg;
-          System.err.printf("變異係數:%.2f\n",cv);
+          System.err.printf("變異係數:%.2f\n",cv);*/
     }
 }
